@@ -1,26 +1,23 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-red: hsl(14, 86%, 42%);
+  --color-green: hsl(159, 69%, 38%);
+  --color-rose50: hsl(20, 50%, 98%);
+  --color-rose100: hsl(13, 31%, 94%);
+  --color-rose300: hsl(14, 25%, 72%);
+  --color-rose400: hsl(7, 20%, 60%);
+  --color-rose500: hsl(12, 20%, 44%);
+  --color-rose900: hsl(14, 65%, 9%);
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-red-hat-text), sans-serif;
+}
+
+.emptyCart {
+  background-image: url("/illustration-empty-cart.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  
 }
