@@ -61,7 +61,7 @@ const Modal = ({ modalOpen, cartItems, startNewOrder }) => {
               </div>
             </div>
 
-            {/* Start New Order Button */}
+           
             <Button
               showIcon={false}
               onClick={startNewOrder}

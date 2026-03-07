@@ -11,13 +11,13 @@ const ProductCard = ({
 }) => {
   return (
     <>
-      <section className="md:w-[80%]  md:p-8 md:grid md:grid-cols-3 md:gap-4 ">
+      <section className="flex flex-col justify-center items-center  md:w-[80%]  md:p-8 md:grid md:grid-cols-3 md:gap-4 ">
         {Products.map((product) => {
           const cartItem = cartItems.find((item) => item.name === product.name);
           return (
             <div
               key={product.name}
-              className="border border-black w-[200px] h-[200px] md:p-1.5 flex justify-center items-center flex-col rounded-sm"
+              className="border border-rose100 mt-4 last:mb-4 w-[200px] min-h-[240px] p-3 h-auto md:p-1.5 md:flex md:justify-center md:items-center md:flex-col rounded-sm"
             >
               <div className="flex flex-col justify-center items-center">
                 <Image
@@ -30,14 +30,14 @@ const ProductCard = ({
                   <div className="flex flex-row p-5 justify-center items-center">
                     <button
                       onClick={() => decreaseQuantity(cartItem)}
-                      className="cursor-pointer py-2 px-6 p-4 rounded-full bg-red text-xl"
+                      className="cursor-pointer w-8 h-8  rounded-full bg-red text-lg"
                     >
                       -
                     </button>
                     <div className="text-xl p-2.5">{cartItem.quantity}</div>
                     <button
                       onClick={() => increaseQuantity(cartItem)}
-                      className=" cursor-pointer py-2 px-6 p-4 rounded-full bg-red text-xl"
+                      className=" cursor-pointer w-8 h-8  rounded-full bg-red text-lg"
                     >
                       +
                     </button>

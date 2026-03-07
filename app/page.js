@@ -65,8 +65,9 @@ const Page = () => {
   };
 
   return (
-    <section className="md:flex md:flex-row p-8">
+    <section className="md:flex md:flex-row p-8 flex flex-col ">
       <ProductCard
+       
         increaseQuantity={increaseQuantity}
         decreaseQuantity={decreaseQuantity}
         addToCart={addToCart}
